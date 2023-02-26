@@ -44,7 +44,7 @@ const Hero = () => {
           <div className="w-full hidden md:flex items-center justify-center h-full">
             <div className="w-full mdl:w-[90%] lg:w-full h-full mdl:h-[90%] lg:h-[80%] flex items-center justify-center relative">
               <Image
-                src="/images/joggin.svg"
+                src="/images/jogging.svg"
                 alt=""
                 fill
                 className="object-contain"
