@@ -4,6 +4,7 @@ import Image from "next/image";
 import Container from "@/components/Commons/Container/Container";
 import Navabr from "../Menu/Navabr";
 import Sidebar from "../Menu/Sidebar";
+import TypewriterText from "./TypewriterText";
 
 const Hero = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -21,9 +22,10 @@ const Hero = () => {
           <div className="order-last lg:order-first w-full h-full md:h-auto flex items-center md:items-start justify-center flex-col gap-4 md:gap-2 lg:gap-4">
             <h1 className="text-white text-center md:text-left uppercase text-4xl xs:text-5xl md:text-4xl lg:text-7xl font-semibold ">
               We are the <br className="" />{" "}
-              <span className="text-main text-4xl xs:text-5xl lg:text-8xl">
+              {/* <span className="text-main text-4xl xs:text-5xl lg:text-8xl">
                 future
-              </span>
+              </span> */}
+              <TypewriterText />
             </h1>
             <p className="w-[85%] xs:w-[80%] md:w-full lg:w-[75%] text-center md:text-left text-white text-lg xs:text-xl font-medium">
               We are the generation that is going to change the world!
