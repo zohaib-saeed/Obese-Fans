@@ -19,7 +19,7 @@ const Hero = () => {
         <Navabr openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
         <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mdl:gap-12 lg:gap-7 py-4 xs:py-8 md:py-6">
           {/* Col 1  */}
-          <div className="order-last lg:order-first w-full h-full md:h-auto flex items-center md:items-start justify-center flex-col gap-4 md:gap-2 lg:gap-4">
+          <div className=" w-full h-full md:h-auto flex items-center md:items-start justify-center flex-col gap-4 md:gap-2 lg:gap-4">
             <h1 className="text-white text-center md:text-left uppercase text-4xl xs:text-5xl md:text-4xl lg:text-7xl font-semibold ">
               We are the <br className="" />{" "}
               {/* <span className="text-main text-4xl xs:text-5xl lg:text-8xl">
