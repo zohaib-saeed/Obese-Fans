@@ -32,8 +32,8 @@ const AboutUs = () => {
               Help us kickstart this project. Purchase NFTs containing our $CLRS
               tokens before they are sold out. This purchase allows you to
               obtain our tokens at a discounted price of $0.0010 and also
-              provides you with "access to" multiple other features on our
-              platform!
+              provides you with &quot;access to&quot; multiple other features on
+              our platform!
             </p>
           </div>
         </div>
