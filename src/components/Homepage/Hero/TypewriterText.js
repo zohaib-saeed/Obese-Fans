@@ -5,13 +5,12 @@ const TypewriterText = () => {
   return (
     <div className="text-main text-4xl xs:text-5xl lg:text-8xl">
       <Typewriter
-        loop={true}
-        onInit={(typewriter) => {
-          typewriter
-            .typeString("FUTURE")
-            .pauseFor(500)
-            // .deleteAll()
-            .start();
+        options={{
+          strings: ["FUTURE"],
+          autoStart: true,
+          loop: true,
+          delay: 200,
+          pauseFor: 300,
         }}
       />
     </div>
