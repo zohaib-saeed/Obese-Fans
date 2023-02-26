@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <Container height="h-screen">
-      <div className="w-full h-full min-h-[500px] xs:min-h-[600px] md:min-h-[500px] lg:min-h-[700px]  flex items-center justify-center md:justify-start flex-col ">
+      <div className="w-full h-full min-h-[370px] xs:min-h-[600px] md:min-h-[500px] lg:min-h-[700px]  flex items-center justify-center md:justify-start flex-col ">
         <Navabr openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
         <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mdl:gap-12 lg:gap-7 py-8 md:py-6">
           {/* Col 1  */}
