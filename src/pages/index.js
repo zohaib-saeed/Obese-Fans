@@ -1,9 +1,10 @@
-
+import Hero from "@/components/Homepage/Hero/Hero";
+import React from "react";
 
 export default function Home() {
   return (
-    <>
-  <div className="w-screen h-screen flex items-center justify-center">Testing taiwlind css</div>
-    </>
-  )
+    <div className="w-full flex flex-col items-center justify-start">
+      <Hero />
+    </div>
+  );
 }
