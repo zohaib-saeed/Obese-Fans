@@ -3,6 +3,7 @@ import AboutUs from "@/components/Homepage/AboutUs/AboutUs";
 import Hero from "@/components/Homepage/Hero/Hero";
 import WhoWeAre from "@/components/Homepage/WhoWe Are/WhoWeAre";
 import WhyInvestInUs from "@/components/Homepage/WhyInvestInUs/WhyInvestInUs";
+import OurTeam from "@/components/Homepage/OurTeam/OurTeam";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <AboutUs />
       <WhoWeAre />
       <WhyInvestInUs />
+      <OurTeam />
     </div>
   );
 }
