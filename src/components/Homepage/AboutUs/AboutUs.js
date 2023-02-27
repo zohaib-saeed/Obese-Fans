@@ -28,6 +28,24 @@ const AboutUs = () => {
               professionals; or even become a foundation member of ObeseFans and
               inspire others with your story.
             </p>
+            <div className="w-full flex flex-col xs:flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center justify-center md:justify-start gap-3 lg:gap-5">
+              <div className="border-solid border-2 border-main rounded p-2 ">
+                <h3 className="text-center w-full text-2xl font-medium text-main">
+                  1.1 Billion People <br />{" "}
+                  <span className="font-normal text-white text-base">
+                    or more are overweight
+                  </span>
+                </h3>
+              </div>
+              <div className="border-solid border-2 border-main rounded p-2 ">
+                <h3 className="text-center w-full text-2xl font-medium text-main">
+                  350 Million kids <br />{" "}
+                  <span className="font-normal text-white text-base">
+                    were overweight in 2020
+                  </span>
+                </h3>
+              </div>
+            </div>
             <p className="text-white font-medium text-base lg:text-lg text-center md:text-left">
               Help us kickstart this project. Purchase NFTs containing our $CLRS
               tokens before they are sold out. This purchase allows you to
