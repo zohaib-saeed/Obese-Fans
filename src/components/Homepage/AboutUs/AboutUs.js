@@ -29,7 +29,7 @@ const AboutUs = () => {
               inspire others with your story.
             </p>
             <div className="w-full flex flex-col xs:flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center justify-center md:justify-start gap-3 lg:gap-5">
-              <div className="border-solid border-2 border-main rounded p-2 ">
+              <div className="border-solid border-2 border-main rounded p-2 bg-main bg-opacity-20">
                 <h3 className="text-center w-full text-2xl font-medium text-main">
                   1.1 Billion People <br />{" "}
                   <span className="font-normal text-white text-base">
@@ -37,7 +37,7 @@ const AboutUs = () => {
                   </span>
                 </h3>
               </div>
-              <div className="border-solid border-2 border-main rounded p-2 ">
+              <div className="border-solid border-2 border-main rounded p-2 bg-main bg-opacity-20">
                 <h3 className="text-center w-full text-2xl font-medium text-main">
                   350 Million kids <br />{" "}
                   <span className="font-normal text-white text-base">

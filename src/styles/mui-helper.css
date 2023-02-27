@@ -1,0 +1,19 @@
+.MuiAccordion-root {
+  background-color: transparent !important;
+}
+
+.MuiAccordionSummary-root {
+  background-color: #00a6cb4e !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.MuiAccordionDetails-root {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+.MuiPaper-root {
+  border-radius: 0px !important;
+}
