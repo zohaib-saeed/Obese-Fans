@@ -7,7 +7,7 @@ import ResponsiveHeading from "@/components/Commons/ResponsiveHeading/Responsive
 const WhoWeAre = () => {
   return (
     <Container>
-      <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-16">
+      <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
         {/* <ResponsiveHeading text="Who we are?" /> */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 lg:gap-10">
           {/* Col 1 => Our Vision  */}

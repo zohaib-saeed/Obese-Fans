@@ -7,12 +7,12 @@ import ResponsiveHeading from "@/components/Commons/ResponsiveHeading/Responsive
 const AboutUs = () => {
   return (
     <Container>
-      <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-16">
+      <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
         <ResponsiveHeading text="About Us" />
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 lg:gap-10">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-7">
           {/* Col 1  */}
           <div className="w-full flex items-center justify-center md:justify-start">
-            <div className="w-[90%] xs:w-[400px] md:w-full h-[300px] md:h-[400px] flex items-center justify-center relative">
+            <div className="w-[85%] md:w-full h-[230px] xs:h-[270px] md:h-[400px]  flex items-center justify-center relative">
               <Image
                 src="/images/about2.svg"
                 alt=""

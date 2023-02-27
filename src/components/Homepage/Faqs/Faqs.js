@@ -12,7 +12,7 @@ import { faqs } from "@/data/faqs";
 const Faqs = () => {
   return (
     <Container>
-      <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-16">
+      <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
         <ResponsiveHeading text="Faq" />
         {/* List => Faqs  */}
         <div className="w-full flex items-center justify-start flex-col gap-2">

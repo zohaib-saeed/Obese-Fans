@@ -8,7 +8,7 @@ import whyInvestInUs from "@/data/investInUs";
 const WhyInvestInUs = () => {
   return (
     <Container>
-      <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-16">
+      <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
         <ResponsiveHeading text="Why Invest in us?" />
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 mdl:grid-cols-3  gap-3 mdl:gap-2 lg:gap-4">
           {whyInvestInUs.map((item, index) => (

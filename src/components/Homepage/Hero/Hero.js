@@ -14,18 +14,14 @@ const Hero = () => {
   };
 
   return (
-    <Container height="h-screen">
-      <div className="w-full h-full min-h-[370px] xs:min-h-[600px] md:min-h-[500px] lg:min-h-[700px]  flex items-center justify-center md:justify-start flex-col ">
+    <Container height="lg:h-screen">
+      <div className="w-full h-full lg:min-h-[650px]  flex items-center justify-center md:justify-start flex-col ">
         <Navabr openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
-        <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mdl:gap-12 lg:gap-7 py-4 xs:py-8 md:py-6">
+        <div className=" w-full h-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-7 py-12 xs:py-20 md:py-12 lg:py-6">
           {/* Col 1  */}
-          <div className=" w-full h-full md:h-auto flex items-center md:items-start justify-center flex-col gap-4 md:gap-2 lg:gap-4">
+          <div className="order-last mdl:order-first w-full h-full md:h-auto flex items-center md:items-start justify-center flex-col gap-4 md:gap-2 lg:gap-4">
             <h1 className="text-white text-center md:text-left uppercase text-4xl xs:text-5xl md:text-4xl lg:text-7xl font-semibold ">
-              We are the <br className="" />{" "}
-              {/* <span className="text-main text-4xl xs:text-5xl lg:text-8xl">
-                future
-              </span> */}
-              <TypewriterText />
+              We are the <br className="" /> <TypewriterText />
             </h1>
             <p className="w-[85%] xs:w-[80%] md:w-full lg:w-[75%] text-center md:text-left text-white text-lg xs:text-xl font-medium">
               We are the generation that is going to change the world!
@@ -41,8 +37,8 @@ const Hero = () => {
             </button>
           </div>
           {/* Col 2 */}
-          <div className="w-full hidden md:flex items-center justify-center h-full">
-            <div className="w-full mdl:w-[90%] lg:w-full h-full mdl:h-[90%] lg:h-[80%] flex items-center justify-center relative">
+          <div className="w-full flex items-center justify-center h-full">
+            <div className="w-[85%] xs:w-[70%] md:w-full h-[230px] xs:h-[250px] md:h-[400px] flex items-center justify-center relative">
               <Image
                 src="/images/jogging.svg"
                 alt=""
