@@ -3,7 +3,7 @@ import Image from "next/image";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -35,7 +35,7 @@ const OurTeam = () => {
             slidesPerView={1}
             spaceBetween={10}
             autoplay={{
-              delay: 2000,
+              delay: 1000,
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
@@ -56,7 +56,7 @@ const OurTeam = () => {
                 spaceBetween: 20,
               },
             }}
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             className="mySwiper"
           >
             {ourTeam.map((item, index) => (
