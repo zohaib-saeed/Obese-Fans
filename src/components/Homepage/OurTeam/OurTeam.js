@@ -43,9 +43,9 @@ const OurTeam = () => {
               clickable: true,
             }}
             breakpoints={{
-              640: {
+              480: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 10,
               },
               768: {
                 slidesPerView: 3,
@@ -61,8 +61,8 @@ const OurTeam = () => {
           >
             {ourTeam.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="w-full h-[100%] flex flex-col items-center justify-start gap-3 p-5 py-12 rounded bg-main bg-opacity-20 border-main border-solid border-2">
-                  <div className="w-[120px] h-[120px] flex items-center justify-center relative ">
+                <div className="w-full h-[100%] min-h-[300px] flex flex-col items-center justify-start gap-3 p-5 py-8 rounded bg-main bg-opacity-20 border-main border-solid border-2">
+                  <div className="max-w-[120px] min-w-[120px] max-h-[120px] min-h-[120px] rounded-full overflow-hidden flex items-center justify-center relative ">
                     <Image
                       src="/images/user.svg"
                       alt=""
