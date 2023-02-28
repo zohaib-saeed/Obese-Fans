@@ -18,6 +18,7 @@ const Footer = () => {
           <div className="w-full flex flex-col items-center sm:items-start justify-between gap-3">
             <div className="w-[200px] h-[50px] flex items-center justify-center relative">
               <Image
+                priority
                 src="/images/logo-white-transparent.png"
                 alt=""
                 fill

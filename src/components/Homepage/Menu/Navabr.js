@@ -16,6 +16,7 @@ const Navabr = ({ isOpen, setIsOpen }) => {
         {/*Left => Logo  */}
         <div className="w-[170px] lg:w-[200px] h-[50px] relative flex items-center justify-center ">
           <Image
+            priority
             src="/images/logo-blue.png"
             alt=""
             fill
