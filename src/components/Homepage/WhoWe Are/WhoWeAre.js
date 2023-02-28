@@ -11,7 +11,7 @@ const WhoWeAre = () => {
         {/* <ResponsiveHeading text="Who we are?" /> */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 lg:gap-10">
           {/* Col 1 => Our Vision  */}
-          <div className="w-full flex items-center justify-start flex-col gap-3 hover:scale-105 cursor-pointer transition-all duration-300 border-solid border-main border-2 rounded p-5 bg-main bg-opacity-20">
+          <div className="w-full flex items-center justify-start flex-col gap-3 lg:hover:scale-105 cursor-pointer transition-all duration-300 border-solid border-main border-2 rounded p-5 bg-main bg-opacity-20">
             <h2 className="w-full text-main text-2xl lg:text-3xl  text-center font-bold uppercase">
               Our Vision
             </h2>
