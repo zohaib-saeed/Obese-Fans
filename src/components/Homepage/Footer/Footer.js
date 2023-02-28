@@ -91,7 +91,7 @@ const Footer = () => {
               </p>
               <button className="flex items-center  justify-between gap-2 border-main border-solid border-2 rounded px-3 py-1 bg-transparent cursor-pointer hover:bg-main hover:bg-opacity-30  transition-all text-base text-main duration-300  font-medium">
                 <p>info@obesefans.com</p>
-                <ArrowUpRight color="#00A6CB" />
+                <ArrowUpRight color="#00A6CB" size={19} />
               </button>
             </div>
           </div>
