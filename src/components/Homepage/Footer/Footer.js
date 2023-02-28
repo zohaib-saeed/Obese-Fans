@@ -12,7 +12,7 @@ import Container from "@/components/Commons/Container/Container";
 const Footer = () => {
   return (
     <Container id="contact-us">
-      <div className="w-full  py-5 bg-main bg-opacity-20 border-solid border-main border-2 mb-4 px-4">
+      <div className="w-full py-2 sm:py-3 md:py-4  mdl:py-5 bg-main bg-opacity-20 border-solid border-main border-2 mb-4 px-4">
         <div className="w-full grid grid-cols-1 sm:grid-cols-[2fr_0.45fr] gap-10 sm:gap-5">
           {/* Col 1  */}
           <div className="w-full flex flex-col items-center sm:items-start justify-between gap-3">
