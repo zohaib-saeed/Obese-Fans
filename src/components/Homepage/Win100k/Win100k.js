@@ -20,8 +20,8 @@ const Win100k = () => {
     <Container id="win-100k">
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-7 py-10 md:py-12 lg:py-16 win100k">
         {/* Col 1 */}
-        <div className="w-full flex flex-col items-start justify-center gap-5">
-          <h2 className="w-full text-left text-5xl lg:text-6xl text-white font-semibold lg:font-bold">
+        <div className="w-full flex flex-col items-start justify-center gap-3 xs:gap-5">
+          <h2 className="w-full text-left text-4xl xs:text-5xl lg:text-6xl text-white font-semibold lg:font-bold">
             Win Free <span className="text-main">$CLRS</span>
           </h2>
           <p className=" w-full lg:w-[85%] text-left text-white text-lg xs:text-xl font-medium">
