@@ -5,7 +5,7 @@ import { FaTwitter as Twitter } from "react-icons/fa";
 import { FaDiscord as Discord } from "react-icons/fa";
 import { FaTelegramPlane as Telegram } from "react-icons/fa";
 import { FaTiktok as Tiktok } from "react-icons/fa";
-import { FiArrowRight as ArrowRight } from "react-icons/fi";
+import { FiArrowUpRight as ArrowUpRight } from "react-icons/fi";
 
 import Container from "@/components/Commons/Container/Container";
 
@@ -91,7 +91,7 @@ const Footer = () => {
               </p>
               <button className="flex items-center  justify-between gap-2 border-main border-solid border-2 rounded px-3 py-1 bg-transparent cursor-pointer hover:bg-main hover:bg-opacity-30  transition-all text-base text-main duration-300  font-medium">
                 <p>info@obesefans.com</p>
-                <ArrowRight color="#00A6CB" />
+                <ArrowUpRight color="#00A6CB" />
               </button>
             </div>
           </div>
