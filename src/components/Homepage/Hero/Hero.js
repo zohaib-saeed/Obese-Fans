@@ -2,24 +2,17 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import Container from "@/components/Commons/Container/Container";
-import Navabr from "../Menu/Navabr";
-import Sidebar from "../Menu/Sidebar";
 import TypewriterText from "./TypewriterText";
+import Navabr from "../Menu/Navabr";
 
-const Hero = () => {
-  const [openDrawer, setOpenDrawer] = useState(false);
-
-  const toggleDrawer = () => {
-    setOpenDrawer((prevState) => !prevState);
-  };
-
+const Hero = ({ isOpen, setIsOpen }) => {
   return (
     <Container height="lg:h-screen" id="home">
       <div className="w-full h-full lg:min-h-[650px]  flex items-center justify-center md:justify-start flex-col ">
-        <Navabr openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
+        <Navabr isOpen={isOpen} setIsOpen={setIsOpen} />
         <div className=" w-full h-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-7 py-12 xs:py-20 md:py-12 lg:py-6">
           {/* Col 1  */}
-          <div className="order-last mdl:order-first w-full h-full md:h-auto flex items-center md:items-start justify-center flex-col gap-4 md:gap-2 lg:gap-4">
+          <div className="order-last md:order-first w-full h-full md:h-auto flex items-center md:items-start justify-center flex-col gap-4 md:gap-2 lg:gap-4">
             <h1 className="text-white text-center md:text-left uppercase text-4xl xs:text-5xl md:text-4xl lg:text-7xl font-semibold ">
               We are the <br className="" /> <TypewriterText />
             </h1>

@@ -1,22 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import { ImArrowUpRight2 as ArrowUpRight } from "react-icons/im";
-import Hamburger from "hamburger-react";
-import Sidebar from "./Sidebar";
+import { FiMenu as MenuIcon } from "react-icons/fi";
 import Link from "next/link";
 
-const Navabr = ({ openDrawer, setOpenDrawer }) => {
-  const navLinks = [
-    { item: "Home", href: "home" },
-    { item: "About", href: "about-us" },
-    { item: "Win 100k", href: "win" },
-    { item: "Invest in us", href: "invest-in-us" },
-    { item: "Our team", href: "our-team" },
-    { item: "Contact us", href: "contact-us" },
-  ];
+import { navLinks } from "@/data/navLinks";
 
+const Navabr = ({ isOpen, setIsOpen }) => {
   const toggleDrawer = () => {
-    setOpenDrawer(true);
+    setIsOpen((prevState) => !prevState);
   };
 
   return (
@@ -48,13 +39,7 @@ const Navabr = ({ openDrawer, setOpenDrawer }) => {
           </button>
         </div>
         <div className="inline lg:hidden">
-          <Hamburger
-            onClick={toggleDrawer}
-            duration={0.3}
-            color="white"
-            size={24}
-            className="cursor-pointer"
-          />
+          <MenuIcon color="white" size={26} onClick={toggleDrawer} />
         </div>
       </div>
     </React.Fragment>
