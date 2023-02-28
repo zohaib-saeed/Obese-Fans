@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import Container from "@/components/Commons/Container/Container";
 import TypewriterText from "./TypewriterText";
@@ -25,9 +26,12 @@ const Hero = ({ isOpen, setIsOpen }) => {
               helping them improve their lifestyle, become healthier, and
               achieve their goals.
             </p>
-            <button className="flex items-center  justify-center gap-1 border-main border-solid border-2 rounded px-6 py-2 bg-transparent cursor-pointer hover:bg-main hover:bg-opacity-30  transition-all text-base text-main duration-300 uppercase font-medium">
-              Download Our whitepaper
-            </button>
+
+            <Link href="https://drive.google.com/file/d/1Z3-qokKIyd9sQ1HlZp5_h_-jgFWlaaPf/view">
+              <button className="flex items-center  justify-center gap-1 border-main border-solid border-2 rounded px-6 py-2 bg-transparent cursor-pointer hover:bg-main hover:bg-opacity-30  transition-all text-base text-main duration-300 uppercase font-medium">
+                Download Our whitepaper
+              </button>
+            </Link>
           </div>
           {/* Col 2 */}
           <div className="w-full flex items-center justify-center h-full">
