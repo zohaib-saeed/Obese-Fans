@@ -37,7 +37,7 @@ const WhoWeAre = () => {
             </div>
           </div>
           {/* Col 2 => Our Mission  */}
-          <div className="w-full flex items-center justify-start flex-col gap-3 hover:scale-105 cursor-pointer transition-all duration-300 border-solid border-main border-2 rounded p-5 bg-main bg-opacity-20">
+          <div className="w-full flex items-center justify-start flex-col gap-3 lg:hover:scale-105 cursor-pointer transition-all duration-300 border-solid border-main border-2 rounded p-5 bg-main bg-opacity-20">
             <h2 className="w-full text-main text-2xl lg:text-3xl  text-center font-bold uppercase">
               Our Mission
             </h2>
