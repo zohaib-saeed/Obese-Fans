@@ -25,8 +25,8 @@ const Win100k = () => {
             Win Free <span className="text-main">$CLRS</span>
           </h2>
           <p className="w-[85%] xs:w-[80%] md:w-full lg:w-[75%] text-left text-white text-lg xs:text-xl font-medium">
-            We're thrilled to launch our new website & celebrate with a $10k
-            sweepstakes! Don't miss your chance to win. To earn multiple
+            We&apos;re thrilled to launch our new website & celebrate with a
+            $10k sweepstakes! Don't miss your chance to win. To earn multiple
             entries, you can complete the following tasks:
           </p>
           <div className="w-full flex flex-col items-start justify-start gap-1">
