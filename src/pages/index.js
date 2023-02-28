@@ -15,13 +15,6 @@ export default function Home() {
       <WhyInvestInUs />
       <OurTeam />
       <Faqs />
-      <div className="w-[300px] h-[700px] overflow-y-scroll">
-        <div id="67257-09f6smk5" className="w-full h-full"></div>
-        <script
-          type="text/javascript"
-          src="https://sweepwidget.com/w/j/w_init.js"
-        ></script>
-      </div>
     </div>
   );
 }
