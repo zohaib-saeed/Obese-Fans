@@ -27,3 +27,17 @@ body {
   color: white;
   background: #00a6cb;
 }
+
+.win100k ::-webkit-scrollbar {
+  width: 4px;
+}
+
+.win100k ::-webkit-scrollbar-track {
+  /* background-color: #00a6cb; */
+  background-color: white;
+}
+
+.win100k ::-webkit-scrollbar-thumb {
+  background-color: #00a6cb;
+  border-radius: 5px;
+}
