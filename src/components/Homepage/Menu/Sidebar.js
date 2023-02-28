@@ -40,11 +40,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           {/* Nav Links  */}
           <div className="flex items-center justify-start flex-col gap-4">
             {navLinks.map((item, index) => (
-              <Link href={`#${item.href}`} onClick={toggleDrawer}>
-                <div
-                  key={index}
-                  className="text-white hover:opacity-70 text-lg font-medium text-center cursor-pointer transition-all duration-300"
-                >
+              <Link key={index} href={`#${item.href}`} onClick={toggleDrawer}>
+                <div className="text-white hover:opacity-70 text-lg font-medium text-center cursor-pointer transition-all duration-300">
                   {item.item}
                 </div>
               </Link>

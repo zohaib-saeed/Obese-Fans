@@ -25,11 +25,8 @@ const Navabr = ({ isOpen, setIsOpen }) => {
         {/* Right => Desktop Nav Links  */}
         <div className="hidden lg:flex items-center justify-end gap-5">
           {navLinks.map((item, index) => (
-            <Link href={`#${item.href}`}>
-              <div
-                key={index}
-                className="text-white hover:opacity-70 text-base font-medium text-center cursor-pointer transition-all duration-300"
-              >
+            <Link key={index} href={`#${item.href}`}>
+              <div className="text-white hover:opacity-70 text-base font-medium text-center cursor-pointer transition-all duration-300">
                 {item.item}
               </div>
             </Link>
