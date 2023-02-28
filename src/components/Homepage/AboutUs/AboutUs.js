@@ -6,7 +6,7 @@ import ResponsiveHeading from "@/components/Commons/ResponsiveHeading/Responsive
 
 const AboutUs = () => {
   return (
-    <Container>
+    <Container id="about-us">
       <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
         <ResponsiveHeading text="About Us" />
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-7">

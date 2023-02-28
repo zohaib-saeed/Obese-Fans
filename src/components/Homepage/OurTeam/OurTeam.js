@@ -26,7 +26,7 @@ const OurTeam = () => {
   }
 
   return (
-    <Container>
+    <Container id="our-team">
       <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
         <ResponsiveHeading text="Our team" />
         {/* Slider  */}
