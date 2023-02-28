@@ -21,13 +21,13 @@ const Win100k = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-7 py-10 md:py-12 lg:py-16 win100k">
         {/* Col 1 */}
         <div className="w-full flex flex-col items-start justify-center gap-5">
-          <h2 className="w-full text-left text-5xl lg:text-6xl text-white font-bold">
+          <h2 className="w-full text-left text-5xl lg:text-6xl text-white font-semibold lg:font-bold">
             Win Free <span className="text-main">$CLRS</span>
           </h2>
-          <p className="w-[85%] xs:w-[80%] md:w-full lg:w-[75%] text-left text-white text-lg xs:text-xl font-medium">
+          <p className=" w-full lg:w-[85%] text-left text-white text-lg xs:text-xl font-medium">
             We&apos;re thrilled to launch our new website & celebrate with a
-            $10k sweepstakes! Don't miss your chance to win. To earn multiple
-            entries, you can complete the following tasks:
+            $10k sweepstakes! Don&apos;t miss your chance to win. To earn
+            multiple entries, you can complete the following tasks:
           </p>
           <div className="w-full flex flex-col items-start justify-start gap-1">
             {win100k.map((item, index) => (
