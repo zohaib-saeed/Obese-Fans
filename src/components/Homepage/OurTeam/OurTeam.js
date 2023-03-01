@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Pagination, Autoplay } from "swiper";
+import { Fade } from "react-awesome-reveal";
 
 // Import Swiper styles
 import "swiper/css";
@@ -61,22 +62,24 @@ const OurTeam = () => {
           >
             {ourTeam.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="w-full h-[100%] min-h-[300px] flex flex-col items-center justify-start gap-3 p-5 py-8 rounded bg-main bg-opacity-20 border-main border-solid border-2">
-                  <div className="max-w-[120px] min-w-[120px] max-h-[120px] min-h-[120px] rounded-full overflow-hidden flex items-center justify-center relative ">
-                    <Image
-                      src="/images/user.svg"
-                      alt=""
-                      fill
-                      className="object-contain"
-                    />
+                <Fade direction="up">
+                  <div className="w-full h-[100%] min-h-[300px] flex flex-col items-center justify-start gap-3 p-5 py-8 rounded bg-main bg-opacity-20 border-main border-solid border-2">
+                    <div className="max-w-[120px] min-w-[120px] max-h-[120px] min-h-[120px] rounded-full overflow-hidden flex items-center justify-center relative ">
+                      <Image
+                        src="/images/user.svg"
+                        alt=""
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <h5 className="w-full text-center text-main text-2xl sm:text-3xl font-semibold">
+                      {item.name}
+                    </h5>
+                    <p className="text-white font-medium text-lg  text-center capitalize">
+                      {item.position}
+                    </p>
                   </div>
-                  <h5 className="w-full text-center text-main text-2xl sm:text-3xl font-semibold">
-                    {item.name}
-                  </h5>
-                  <p className="text-white font-medium text-lg  text-center capitalize">
-                    {item.position}
-                  </p>
-                </div>
+                </Fade>
               </SwiperSlide>
             ))}
           </Swiper>

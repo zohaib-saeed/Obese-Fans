@@ -4,6 +4,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Fade } from "react-awesome-reveal";
 
 import Container from "@/components/Commons/Container/Container";
 import ResponsiveHeading from "@/components/Commons/ResponsiveHeading/ResponsiveHeading";
@@ -16,35 +17,37 @@ const Faqs = () => {
         <ResponsiveHeading text="Faq" />
         {/* List => Faqs  */}
         <div className="w-full flex items-center justify-start flex-col gap-2">
-          {faqs.map((item, index) => (
-            <Accordion
-              key={index}
-              className="w-full border-main border-solid border-2 "
-            >
-              <AccordionSummary
-                expandIcon={
-                  <ExpandMoreIcon
-                    sx={{
-                      fontSize: "30px ",
-                      fontWeight: 500,
-                      color: "#00A6CB",
-                    }}
-                  />
-                }
-                aria-controls="panel1a-content"
-                id="panel1a-header"
+          <Fade direction="up" cascade={0.1} className="w-full" triggerOnce>
+            {faqs.map((item, index) => (
+              <Accordion
+                key={index}
+                className="w-full border-main border-solid border-2 "
               >
-                <div className="text-white font-medium text-lg  text-left w-full">
-                  {item.summary}
-                </div>
-              </AccordionSummary>
-              <AccordionDetails className="!bg-none">
-                <p className="text-white font-medium text-lg  left w-full">
-                  {item.detail}
-                </p>
-              </AccordionDetails>
-            </Accordion>
-          ))}
+                <AccordionSummary
+                  expandIcon={
+                    <ExpandMoreIcon
+                      sx={{
+                        fontSize: "30px ",
+                        fontWeight: 500,
+                        color: "#00A6CB",
+                      }}
+                    />
+                  }
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <div className="text-white font-medium text-lg  text-left w-full">
+                    {item.summary}
+                  </div>
+                </AccordionSummary>
+                <AccordionDetails className="!bg-none">
+                  <p className="text-white font-medium text-lg  left w-full">
+                    {item.detail}
+                  </p>
+                </AccordionDetails>
+              </Accordion>
+            ))}
+          </Fade>
         </div>
       </div>
     </Container>

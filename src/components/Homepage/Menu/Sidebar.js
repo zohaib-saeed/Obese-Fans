@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useId } from "react";
 import Image from "next/image";
 import { MdOutlineClose as CloseIcon } from "react-icons/md";
 import Drawer from "react-modern-drawer";
@@ -13,6 +13,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
     <div className="w-full block lg:hidden">
       <Drawer
+        instanceId={useId()}
         open={isOpen}
         onClose={toggleDrawer}
         direction="left"

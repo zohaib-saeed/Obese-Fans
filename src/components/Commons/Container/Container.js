@@ -6,7 +6,7 @@ const Container = ({ children, height, id, bg }) => {
       id={id}
       className={`w-full ${
         height ? height : "h-auto"
-      } ${bg} flex items-center justify-start flex-col max-w-7xl px-1 xs:px-4 lg:px-6 `}
+      } ${bg} flex items-center justify-start flex-col max-w-[1320px] px-1 xs:px-4 lg:px-6 `}
     >
       {children}
     </div>
