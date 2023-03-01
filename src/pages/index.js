@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Hero from "@/components/Homepage/Hero/Hero";
 import AboutUs from "@/components/Homepage/AboutUs/AboutUs";
 import WhoWeAre from "@/components/Homepage/WhoWe Are/WhoWeAre";
-import WhyInvestInUs from "@/components/Homepage/WhyInvestInUs/WhyInvestInUs";
+import Ecosystem from "@/components/Homepage/Ecosystem/Ecosystem";
 import OurTeam from "@/components/Homepage/OurTeam/OurTeam";
 import Faqs from "@/components/Homepage/Faqs/Faqs";
 import Sidebar from "@/components/Homepage/Menu/Sidebar";
@@ -16,10 +16,10 @@ export default function Home() {
     <div className="w-full flex flex-col items-center justify-start">
       <Hero isOpen={openDrawer} setIsOpen={setOpenDrawer} />
       <Sidebar isOpen={openDrawer} setIsOpen={setOpenDrawer} />
-      <AboutUs />
       <WhoWeAre />
+      <AboutUs />
       <Win100k />
-      <WhyInvestInUs />
+      <Ecosystem />
       <OurTeam />
       <Faqs />
       <Footer />

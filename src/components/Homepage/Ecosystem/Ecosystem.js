@@ -3,15 +3,15 @@ import Image from "next/image";
 
 import Container from "@/components/Commons/Container/Container";
 import ResponsiveHeading from "@/components/Commons/ResponsiveHeading/ResponsiveHeading";
-import whyInvestInUs from "@/data/investInUs";
+import { ecosystem } from "@/data/ecosystem";
 
-const WhyInvestInUs = () => {
+const Ecosystem = () => {
   return (
-    <Container id="invest-in-us">
+    <Container id="ecosystem">
       <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
-        <ResponsiveHeading text="Why Invest in us?" />
+        <ResponsiveHeading text="Ecosystem" />
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 mdl:grid-cols-3  gap-3 mdl:gap-2 lg:gap-4">
-          {whyInvestInUs.map((item, index) => (
+          {ecosystem.map((item, index) => (
             <div
               key={index}
               className="w-full flex flex-col items-center justify-start gap-4 border-main border-solid border-2 p-4 py-7 rounded bg-main bg-opacity-20  lg:cursor-pointer lg:hover:scale-105 transition-all duration-300"
@@ -38,4 +38,4 @@ const WhyInvestInUs = () => {
   );
 };
 
-export default WhyInvestInUs;
+export default Ecosystem;

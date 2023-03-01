@@ -37,6 +37,7 @@ const Hero = ({ isOpen, setIsOpen }) => {
           <div className="w-full flex items-center justify-center h-full">
             <div className="w-[85%] xs:w-[70%] md:w-full h-[230px] xs:h-[250px] md:h-[400px] flex items-center justify-center relative">
               <Image
+                // src="/images/hero-left.svg"
                 src="/images/jogging.svg"
                 alt=""
                 fill

@@ -1,4 +1,4 @@
-const whyInvestInUs = [
+export const ecosystem = [
   {
     title: "start your journey",
     description:
@@ -30,5 +30,3 @@ const whyInvestInUs = [
       "Holding our NFT gives you numerous advantages, such as being able to stake or being eligible for rewards. Read more about that in our Whitepaper.",
   },
 ];
-
-export default whyInvestInUs;
