@@ -36,7 +36,7 @@ const OurTeam = () => {
             slidesPerView={1}
             spaceBetween={10}
             autoplay={{
-              delay: 1000,
+              delay: 3000,
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}

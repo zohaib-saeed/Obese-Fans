@@ -5,7 +5,7 @@ const TypewriterText = () => {
   const [typewriterTypedout, setTypewriterTypedout] = useState(false);
   return (
     <div className="text-main text-4xl xs:text-5xl lg:text-8xl">
-      {typewriterTypedout ? (
+      {/* {typewriterTypedout ? (
         <p>FUTURE|</p>
       ) : (
         <Typewriter
@@ -22,16 +22,16 @@ const TypewriterText = () => {
             // .start();
           }}
         />
-      )}
-      {/* <Typewriter
+      )} */}
+      <Typewriter
         options={{
           strings: ["FUTURE"],
           autoStart: true,
-          // loop: true,
-          // delay: 200,
-          // pauseFor: 300,
+          loop: true,
+          delay: 200,
+          pauseFor: 300,
         }}
-      /> */}
+      />
     </div>
   );
 };
