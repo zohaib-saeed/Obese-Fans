@@ -39,7 +39,7 @@ const Hero = ({ isOpen, setIsOpen }) => {
                 {/* </Fade> */}
                 <Fade direction="up" triggerOnce>
                   <Link href="https://drive.google.com/file/d/1Z3-qokKIyd9sQ1HlZp5_h_-jgFWlaaPf/view">
-                    <button className="flex items-center  justify-center gap-1 border-main border-solid border-2 rounded px-6 py-2 bg-transparent cursor-pointer hover:bg-main hover:bg-opacity-30  transition-all text-base text-main duration-300 uppercase font-semibold">
+                    <button className="flex items-center  justify-center gap-1 border-main border-solid border-2 rounded px-6 py-2 bg-transparent cursor-pointer  bg-black   transition-all text-base text-main duration-300 uppercase font-medium">
                       Download Our whitepaper
                     </button>
                   </Link>
