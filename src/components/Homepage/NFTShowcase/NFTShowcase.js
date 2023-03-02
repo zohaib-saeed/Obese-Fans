@@ -44,7 +44,7 @@ const NFTShowcase = () => {
                 {showoff.data.availableNFTs}
               </p>
               <p className="text-center text-lg text-main font-bold">
-                Available NFT's
+                Available NFT&apaos;s
               </p>
             </div>
             {/* Price  */}
