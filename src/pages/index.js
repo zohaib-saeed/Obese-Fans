@@ -9,6 +9,7 @@ import Sidebar from "@/components/Homepage/Menu/Sidebar";
 import Win100k from "@/components/Homepage/Win100k/Win100k";
 import Footer from "@/components/Homepage/Footer/Footer";
 import TokenDetails from "@/components/Homepage/TokenDetails/TokenDetails";
+import Roadmap from "@/components/Homepage/Roadmap/Roadmap";
 
 export default function Home() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -20,6 +21,7 @@ export default function Home() {
       <WhoWeAre />
       <AboutUs />
       <TokenDetails />
+      <Roadmap />
       <Win100k />
       <Ecosystem />
       <OurTeam />

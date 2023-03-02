@@ -7,7 +7,7 @@ import ResponsiveHeading from "@/components/Commons/ResponsiveHeading/Responsive
 
 const TokenDetails = () => {
   return (
-    <Container>
+    <Container id="token-details">
       <div className="w-full max-w-[800px] flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
         <ResponsiveHeading text="Token Details" />
         {/* Detaisl Table  */}
