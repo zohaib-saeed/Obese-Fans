@@ -11,7 +11,7 @@ const Roadmap = () => {
     <Container id="roadmap">
       <div className="w-full  flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
         <ResponsiveHeading text="Roadmap" />
-
+        {/* Roadmap data  */}
         <div className="w-full flex items-center justify-start flex-col gap-6 sm:gap-10">
           <Fade direction="up" triggerOnce>
             <p className="w-full text-white text-base sm:text-lg text-center font-medium">

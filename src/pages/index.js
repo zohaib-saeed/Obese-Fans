@@ -10,6 +10,7 @@ import Win100k from "@/components/Homepage/Win100k/Win100k";
 import Footer from "@/components/Homepage/Footer/Footer";
 import TokenDetails from "@/components/Homepage/TokenDetails/TokenDetails";
 import Roadmap from "@/components/Homepage/Roadmap/Roadmap";
+import NFTShowcase from "@/components/Homepage/NFTShowcase/NFTShowcase";
 
 export default function Home() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -22,6 +23,7 @@ export default function Home() {
       <AboutUs />
       <TokenDetails />
       <Roadmap />
+      <NFTShowcase />
       <Win100k />
       <Ecosystem />
       <OurTeam />
