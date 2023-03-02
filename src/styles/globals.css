@@ -56,3 +56,22 @@ body {
 .nav-link:hover::before {
   width: 100%;
 }
+
+.hero-section {
+  background: rgb(0, 166, 203);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 166, 203, 0.5131302521008403) 53%,
+    rgba(0, 1, 1, 0) 100%
+  );
+}
+
+.animate-blink {
+  animation: blink-animation 1s infinite;
+}
+
+@keyframes blink-animation {
+  50% {
+    opacity: 0;
+  }
+}

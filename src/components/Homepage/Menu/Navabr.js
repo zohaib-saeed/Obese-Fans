@@ -26,11 +26,11 @@ const Navabr = ({ isOpen, setIsOpen }) => {
         {/* Right => Desktop Nav Links  */}
         <div className="hidden lg:flex items-center justify-end gap-5">
           {navLinks.map((item, index) => (
-            <Link key={index} href={`#${item.href}`}>
+            <a key={index} href={`#${item.href}`}>
               <div className="text-white nav-link relative text-base font-medium text-center cursor-pointer transition-all duration-300">
                 {item.item}
               </div>
-            </Link>
+            </a>
           ))}
           <button className="flex items-center  justify-center gap-1 border-main border-solid border-2 rounded px-6 py-2 bg-transparent cursor-pointer hover:bg-main hover:bg-opacity-30  transition-all text-base text-main duration-300 uppercase font-medium">
             $CLRS Presale

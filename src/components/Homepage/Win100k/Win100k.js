@@ -35,7 +35,7 @@ const Win100k = () => {
             </p>
           </Fade>
           <div className="w-full flex flex-col items-start justify-start gap-1">
-            <Fade direction="up" triggerOnce cascade>
+            <Fade direction="up" triggerOnce cascade={0.25}>
               {win100k.map((item, index) => (
                 <div
                   key={index}

@@ -29,7 +29,7 @@ const Roadmap = () => {
               <div className="w-full flex flex-col items-center justify-start gap-1">
                 <Fade
                   direction="up"
-                  cascade={0.1}
+                  cascade={0.25}
                   triggerOnce
                   className="w-full"
                 >

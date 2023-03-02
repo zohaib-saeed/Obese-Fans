@@ -17,7 +17,7 @@ const Faqs = () => {
         <ResponsiveHeading text="Faq" />
         {/* List => Faqs  */}
         <div className="w-full flex items-center justify-start flex-col gap-2">
-          <Fade direction="up" cascade={0.1} className="w-full" triggerOnce>
+          <Fade direction="up" cascade={0.25} className="w-full" triggerOnce>
             {faqs.map((item, index) => (
               <Accordion
                 key={index}

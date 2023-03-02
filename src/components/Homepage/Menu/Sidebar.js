@@ -3,8 +3,9 @@ import Image from "next/image";
 import { MdOutlineClose as CloseIcon } from "react-icons/md";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import { Fade } from "react-awesome-reveal";
+
 import { navLinks } from "@/data/navLinks";
-import Link from "next/link";
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
   const toggleDrawer = () => {
@@ -40,13 +41,15 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           </div>
           {/* Nav Links  */}
           <div className="flex items-center justify-start flex-col gap-4">
-            {navLinks.map((item, index) => (
-              <Link key={index} href={`#${item.href}`} onClick={toggleDrawer}>
-                <div className="text-white hover:opacity-70 text-lg font-medium text-center cursor-pointer transition-all duration-300">
-                  {item.item}
-                </div>
-              </Link>
-            ))}
+            <Fade direction="up" cascade={0.25} triggerOnce>
+              {navLinks.map((item, index) => (
+                <a key={index} href={`#${item.href}`} onClick={toggleDrawer}>
+                  <div className="text-white hover:opacity-70 text-lg font-medium text-center cursor-pointer transition-all duration-300">
+                    {item.item}
+                  </div>
+                </a>
+              ))}
+            </Fade>
             <button
               onClick={toggleDrawer}
               className="flex items-center  mt-6 justify-center gap-1 border-black border-solid border-2 rounded px-6 py-2 cursor-pointer bg-black  transition-all text-base text-white duration-300 uppercase font-medium"
