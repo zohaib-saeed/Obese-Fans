@@ -35,11 +35,11 @@ const OurTeam = () => {
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
-            // autoplay={{
-            //   delay: 3000,
-            //   disableOnInteraction: false,
-            //   pauseOnMouseEnter: true,
-            // }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
             pagination={{
               clickable: true,
             }}
