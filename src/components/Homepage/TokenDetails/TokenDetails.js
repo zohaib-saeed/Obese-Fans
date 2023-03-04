@@ -5,6 +5,7 @@ import { MdOutlineContentCopy as CopyIcon } from "react-icons/md";
 
 import Container from "@/components/Commons/Container/Container";
 import ResponsiveHeading from "@/components/Commons/ResponsiveHeading/ResponsiveHeading";
+import { tokenDetails } from "@/data/tokenDetails";
 
 const TokenDetails = () => {
   // Snackbar handlers
@@ -39,6 +40,20 @@ const TokenDetails = () => {
     setOpen(true);
   };
 
+  //Desctructuring token details object
+  const {
+    tokenName,
+    tokenSymbol,
+    tokenType,
+    tokenContractAddress,
+    tokenSaleStages,
+    presaleContractAddress,
+    presaleDetails,
+    decimals,
+  } = tokenDetails;
+
+  const { calories, currentStagePrice, exchangeListingPrice } = presaleDetails;
+
   return (
     <React.Fragment>
       <Container id="token-details">
@@ -53,10 +68,10 @@ const TokenDetails = () => {
                   {/* Token  Name */}
                   <div className="flex flex-col items-start justify-start ">
                     <div className="text-left text-white text-base uppercase">
-                      token details{" "}
+                      token name{" "}
                     </div>
                     <div className="text-left text-white text-lg font-bold ">
-                      ObeseFans Calories
+                      {tokenName}
                     </div>
                   </div>
                   {/* Token Sale Stages */}
@@ -65,7 +80,7 @@ const TokenDetails = () => {
                       token sale stages
                     </div>
                     <div className="text-left text-white text-lg font-bold ">
-                      2
+                      {tokenSaleStages}
                     </div>
                   </div>
                   {/* Token type*/}
@@ -74,7 +89,7 @@ const TokenDetails = () => {
                       token type
                     </div>
                     <div className="text-left text-white text-lg font-bold ">
-                      BEP-20 (Binance Smart Chain)
+                      {tokenType}
                     </div>
                   </div>
                   {/* Token symbol*/}
@@ -83,16 +98,16 @@ const TokenDetails = () => {
                       token symbol
                     </div>
                     <div className="text-left text-white text-lg font-bold ">
-                      CLRS
+                      {tokenSymbol}
                     </div>
                   </div>
-                  {/* Details*/}
+                  {/* Decimals*/}
                   <div className="flex flex-col items-start justify-start ">
                     <div className="text-left text-white text-base uppercase">
-                      Details
+                      Decimals
                     </div>
                     <div className="text-left text-white text-lg font-bold ">
-                      10
+                      {decimals}
                     </div>
                   </div>
                 </div>
@@ -108,7 +123,7 @@ const TokenDetails = () => {
                         id="token-contract-address"
                         className="text-left text-white text-sm font-normal break-all"
                       >
-                        0X000000000000000000000000000000000000000000
+                        {tokenContractAddress}
                       </div>
                       <CopyIcon
                         color="white"
@@ -126,7 +141,7 @@ const TokenDetails = () => {
 
                     <div className="w-auto break-words flex items-start md:items-center justify-between flex-col md:flex-row gap-2 md:gap-8 p-[10px] bg-main bg-opacity-20 rounded-md ">
                       <div className="text-left text-white text-sm font-normal break-all">
-                        0X000000000000000000000000000000000000000000
+                        {presaleContractAddress}
                       </div>
                       <CopyIcon
                         color="white"
@@ -147,7 +162,7 @@ const TokenDetails = () => {
                   {/* Current stage supply */}
                   <div className="flex flex-col items-start justify-start ">
                     <div className="text-left text-white text-base uppercase">
-                      700,000,000 CLRS
+                      {calories} CLRS
                     </div>
                     <div className="text-left text-white text-lg font-bold ">
                       ObeseFans Calories
@@ -159,7 +174,7 @@ const TokenDetails = () => {
                       current stage price
                     </div>
                     <div className="text-left text-white text-lg font-bold ">
-                      1 CLRS = $0.0024
+                      1 CLRS = ${currentStagePrice}
                     </div>
                   </div>
                   {/* Exchange listing price */}
@@ -168,7 +183,7 @@ const TokenDetails = () => {
                       exchange listing price
                     </div>
                     <div className="text-left text-white text-lg font-bold ">
-                      1 CLRS = $0.0030
+                      1 CLRS = ${exchangeListingPrice}
                     </div>
                   </div>
                 </div>
