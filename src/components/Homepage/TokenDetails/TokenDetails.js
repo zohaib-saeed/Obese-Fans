@@ -138,7 +138,7 @@ const TokenDetails = () => {
               </div>
             </div>
             {/* Col 2  */}
-            <div className="order-first mdl:order-last w-full h-full flex flex-col items-center justify-start border-opacity-25 mdl:border-l-white mdl:border-l mdl:border-l-solid ">
+            <div className="order-first mdl:order-last w-full h-full flex flex-col items-center justify-start border-opacity-25 mdl:border-l-boulder mdl:border-l mdl:border-l-solid ">
               <div className="w-full flex flex-col items-start justify-start gap-3 mdl:gap-6 mdl:pl-5">
                 <h2 className="text-left text-white font-semibold text-2xl ">
                   Presale Details
