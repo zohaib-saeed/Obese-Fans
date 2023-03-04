@@ -6,6 +6,7 @@ import { MdOutlineContentCopy as CopyIcon } from "react-icons/md";
 import Container from "@/components/Commons/Container/Container";
 import ResponsiveHeading from "@/components/Commons/ResponsiveHeading/ResponsiveHeading";
 import { tokenDetails } from "@/data/tokenDetails";
+import SlideInFromBottom from "@/components/Commons/Animations/SlideInFromBottom";
 
 const TokenDetails = () => {
   // Snackbar handlers
@@ -60,7 +61,7 @@ const TokenDetails = () => {
         <div className="w-full  flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
           <ResponsiveHeading text="Token Details" />
           {/* Details Box  */}
-          <Fade className="w-full" direction="up" triggerOnce>
+          <SlideInFromBottom>
             <div className="w-full p-5 md:p-6 mdl:p-9 rounded-xl grid grid-cols-1 mdl:grid-cols-[1.4fr_0.6fr] gap-10 mdl:gap-5 bg-main bg-opacity-20">
               {/* Col 1  */}
               <div className="w-full flex flex-col items-center justify-start gap-5">
@@ -189,7 +190,7 @@ const TokenDetails = () => {
                 </div>
               </div>
             </div>
-          </Fade>
+          </SlideInFromBottom>
         </div>
       </Container>
       <Snackbar

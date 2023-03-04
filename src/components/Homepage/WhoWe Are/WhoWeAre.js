@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
 
 import Container from "@/components/Commons/Container/Container";
-import ResponsiveHeading from "@/components/Commons/ResponsiveHeading/ResponsiveHeading";
+import SlideInFromLeft from "@/components/Commons/Animations/SlieInFromLeft";
+import SlideInFromRight from "@/components/Commons/Animations/SlideInFromRight";
 
 const WhoWeAre = () => {
   return (
@@ -12,7 +12,7 @@ const WhoWeAre = () => {
         {/* <ResponsiveHeading text="Who we are?" /> */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 lg:gap-10">
           {/* Col 1 => Our Vision  */}
-          <Fade direction="left" triggerOnce>
+          <SlideInFromLeft>
             <div className="w-full flex items-center justify-start flex-col gap-3 lg:hover:scale-105 cursor-pointer transition-all duration-300 border-solid border-main border-2 rounded p-5 bg-main bg-opacity-20">
               <h2 className="w-full text-main text-2xl lg:text-3xl  text-center font-bold uppercase">
                 Our Vision
@@ -26,26 +26,22 @@ const WhoWeAre = () => {
                 />
               </div>
               <div className="w-full flex items-start justify-center flex-col gap-2">
-                <Fade direction="up" triggerOnce>
-                  <p className="w-full text-white font-medium text-base text-center">
-                    We are a community of peers helping and motivating each
-                    other to exercise, lose weight, eat healthier, and live more
-                    vibrant, confident lives. We literally want to change the
-                    world.
-                  </p>
-                </Fade>
-                <Fade direction="up" triggerOnce>
-                  <p className="w-full text-white font-medium text-base text-center ">
-                    We are here to build an all-inclusive community that
-                    supports and encourages each other to better their lives,
-                    achieve their goals, and make their dreams a reality.
-                  </p>
-                </Fade>
+                <p className="w-full text-white font-medium text-base text-center">
+                  We are a community of peers helping and motivating each other
+                  to exercise, lose weight, eat healthier, and live more
+                  vibrant, confident lives. We literally want to change the
+                  world.
+                </p>
+                <p className="w-full text-white font-medium text-base text-center ">
+                  We are here to build an all-inclusive community that supports
+                  and encourages each other to better their lives, achieve their
+                  goals, and make their dreams a reality.
+                </p>
               </div>
             </div>
-          </Fade>
+          </SlideInFromLeft>
           {/* Col 2 => Our Mission  */}
-          <Fade direction="right" triggerOnce>
+          <SlideInFromRight>
             <div className="w-full flex items-center justify-start flex-col gap-3 lg:hover:scale-105 cursor-pointer transition-all duration-300 border-solid border-main border-2 rounded p-5 bg-main bg-opacity-20">
               <h2 className="w-full text-main text-2xl lg:text-3xl  text-center font-bold uppercase">
                 Our Mission
@@ -59,24 +55,20 @@ const WhoWeAre = () => {
                 />
               </div>
               <div className="w-full flex items-start justify-center flex-col gap-2">
-                <Fade direction="up" triggerOnce>
-                  <p className="w-full text-white font-medium text-base text-center">
-                    We offer a social-media platform where anyone can become a
-                    content creator. Post videos to inspire others on your
-                    weight-loss journey.Build your following.
-                  </p>
-                </Fade>
-                <Fade direction="up" triggerOnce>
-                  <p className="w-full text-white font-medium text-base text-center ">
-                    Invest in our NFTs and build passive income while receiving
-                    a unique piece of art. Play our healthy-living RPG game,
-                    create a character that tells your story, and add NFTs to
-                    customize your digital life.
-                  </p>
-                </Fade>
+                <p className="w-full text-white font-medium text-base text-center">
+                  We offer a social-media platform where anyone can become a
+                  content creator. Post videos to inspire others on your
+                  weight-loss journey.Build your following.
+                </p>
+                <p className="w-full text-white font-medium text-base text-center ">
+                  Invest in our NFTs and build passive income while receiving a
+                  unique piece of art. Play our healthy-living RPG game, create
+                  a character that tells your story, and add NFTs to customize
+                  your digital life.
+                </p>
               </div>
             </div>
-          </Fade>
+          </SlideInFromRight>
         </div>
       </div>
     </Container>

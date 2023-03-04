@@ -6,6 +6,7 @@ import { RxDotFilled as Dot } from "react-icons/rx";
 import Container from "@/components/Commons/Container/Container";
 import ResponsiveHeading from "@/components/Commons/ResponsiveHeading/ResponsiveHeading";
 import { roadmap } from "@/data/roadmap";
+import SlideInFromBottom from "@/components/Commons/Animations/SlideInFromBottom";
 
 const Roadmap = () => {
   return (
@@ -22,12 +23,7 @@ const Roadmap = () => {
               <h2 className="text-main text-2xl font-bold ">{item.title}</h2>
               <div className="w-full flex flex-col items-start justify-start gap-[7px]">
                 {item.points.map((item, index) => (
-                  <Fade
-                    key={index}
-                    className="w-full"
-                    direction="up"
-                    triggerOnce
-                  >
+                  <SlideInFromBottom key={index}>
                     <div className="w-full flex items-start lg:items-center justify-start gap-1">
                       <Dot
                         color="#00A6CB"
@@ -37,7 +33,7 @@ const Roadmap = () => {
                         {item}
                       </p>
                     </div>
-                  </Fade>
+                  </SlideInFromBottom>
                 ))}
               </div>
             </div>
