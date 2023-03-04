@@ -21,7 +21,7 @@ module.exports = {
       white: "#fff",
       black: "#000000",
       main: "#00A6CB",
-      boulder: "#777777",
+      boulder: "#6c6c6cbd",
     },
     extend: {},
   },
