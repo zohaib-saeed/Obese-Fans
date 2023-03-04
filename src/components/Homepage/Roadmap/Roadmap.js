@@ -17,7 +17,7 @@ const Roadmap = () => {
           {roadmap.data.map((item, index) => (
             <div
               key={index}
-              className="w-full flex flex-col items-center justify-start gap-5 p-2 mdl:p-3 lg:py-7 border-main border-solid border-2 bg-main bg-opacity-20"
+              className="w-full flex flex-col items-center justify-start gap-5 p-2 mdl:p-3 lg:py-7 border-main border-solid border-2 bg-main bg-opacity-20 rounded"
             >
               <h2 className="text-main text-2xl font-bold ">{item.title}</h2>
               <div className="w-full flex flex-col items-start justify-start gap-[7px]">
