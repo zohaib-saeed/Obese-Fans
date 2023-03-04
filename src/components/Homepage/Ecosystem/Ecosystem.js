@@ -12,7 +12,7 @@ const Ecosystem = () => {
     <Container id="ecosystem">
       <div className="w-full flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
         <ResponsiveHeading text="Ecosystem" />
-        <SlideInFromBottom>
+        <Fade direction="up" triggerOnce>
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 mdl:grid-cols-3  gap-3 mdl:gap-2 lg:gap-4">
             {ecosystem.map((item, index) => (
               <div
@@ -27,20 +27,20 @@ const Ecosystem = () => {
                     className="object-contain"
                   />
                 </div>
-                <SlideInFromBottom>
+                <Fade direction="up" triggerOnce>
                   <h4 className="text-2xl font-semibold text-main text-center w-full capitalize">
                     {item.title}
                   </h4>
-                </SlideInFromBottom>
-                <SlideInFromBottom>
+                </Fade>
+                <Fade direction="up" triggerOnce>
                   <p className="text-white font-medium text-base w-full text-center">
                     {item.description}
                   </p>
-                </SlideInFromBottom>
+                </Fade>
               </div>
             ))}
           </div>
-        </SlideInFromBottom>
+        </Fade>
       </div>
     </Container>
   );

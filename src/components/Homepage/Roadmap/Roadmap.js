@@ -23,7 +23,7 @@ const Roadmap = () => {
               <h2 className="text-main text-2xl font-bold ">{item.title}</h2>
               <div className="w-full flex flex-col items-start justify-start gap-[7px]">
                 {item.points.map((item, index) => (
-                  <SlideInFromBottom key={index}>
+                  <Fade direction="up" triggerOnce key={index}>
                     <div className="w-full flex items-start lg:items-center justify-start gap-1">
                       <Dot
                         color="#00A6CB"
@@ -33,7 +33,7 @@ const Roadmap = () => {
                         {item}
                       </p>
                     </div>
-                  </SlideInFromBottom>
+                  </Fade>
                 ))}
               </div>
             </div>

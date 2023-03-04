@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 
 import Container from "@/components/Commons/Container/Container";
 import ResponsiveHeading from "@/components/Commons/ResponsiveHeading/ResponsiveHeading";
@@ -13,12 +14,12 @@ const NFTShowcase = () => {
         <ResponsiveHeading text="FLEX AND SHOWOFF YOUR NFT's" capitalize />
 
         <div className="w-full flex items-center justify-start flex-col gap-6 sm:gap-10">
-          <SlideInFromBottom>
+          <Fade direction="up" triggerOnce>
             <p className="w-full text-white text-base sm:text-lg text-center font-medium">
               {showoff.mainLabel}
             </p>
-          </SlideInFromBottom>
-          <SlideInFromBottom>
+          </Fade>
+          <Fade direction="up" triggerOnce>
             <div className="w-[250px] sm:w-[300px] h-[280px] sm:h-[330px] flex items-center justify-center relative rounded overflow-hidden">
               <Image
                 src={showoff.data.imgUrl}
@@ -27,9 +28,9 @@ const NFTShowcase = () => {
                 className="object-cover"
               />
             </div>
-          </SlideInFromBottom>
+          </Fade>
           <div className="w-full">
-            <SlideInFromBottom>
+            <Fade direction="bottom" triggerOnce>
               <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-4 border-main border-solid border-2 bg-main bg-opacity-20 py-6 px-6 rounded">
                 {/* Total Supply  */}
                 <div className="flex flex-col items-center justify-center gap-[2px]">
@@ -59,7 +60,7 @@ const NFTShowcase = () => {
                   </p>
                 </div>
               </div>
-            </SlideInFromBottom>
+            </Fade>
           </div>
         </div>
       </div>

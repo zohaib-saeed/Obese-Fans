@@ -14,7 +14,7 @@ const AboutUs = () => {
         <ResponsiveHeading text="About Us" />
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-7">
           {/* Col 1  */}
-          <SlideInFromLeft>
+          <Fade direction="left" triggerOnce>
             <div className="w-full flex items-center justify-center md:justify-start">
               <div className="w-[85%] md:w-full h-[230px] xs:h-[270px] md:h-[400px]  flex items-center justify-center relative">
                 <Image
@@ -25,9 +25,9 @@ const AboutUs = () => {
                 />
               </div>
             </div>
-          </SlideInFromLeft>
+          </Fade>
           {/* Col 2  */}
-          <SlideInFromRight>
+          <Fade direction="right" triggerOnce>
             <div className="w-full flex items-start justify-center flex-col gap-3 lg:gap-4">
               <p className="text-white font-medium text-base lg:text-lg text-center md:text-left">
                 Start your journey here with the help of like-minded people and
@@ -62,7 +62,7 @@ const AboutUs = () => {
                 on our platform!
               </p>
             </div>
-          </SlideInFromRight>
+          </Fade>
         </div>
       </div>
     </Container>
