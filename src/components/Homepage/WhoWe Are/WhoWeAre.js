@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 
 import Container from "@/components/Commons/Container/Container";
 import SlideInFromLeft from "@/components/Commons/Animations/SlieInFromLeft";
@@ -12,7 +13,7 @@ const WhoWeAre = () => {
         {/* <ResponsiveHeading text="Who we are?" /> */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 lg:gap-10">
           {/* Col 1 => Our Vision  */}
-          <SlideInFromLeft>
+          <Fade direction="left" triggerOnce>
             <div className="w-full flex items-center justify-start flex-col gap-3 lg:hover:scale-105 cursor-pointer transition-all duration-300 border-solid border-main border-2 rounded p-5 bg-main bg-opacity-20">
               <h2 className="w-full text-main text-2xl lg:text-3xl  text-center font-bold uppercase">
                 Our Vision
@@ -39,9 +40,9 @@ const WhoWeAre = () => {
                 </p>
               </div>
             </div>
-          </SlideInFromLeft>
+          </Fade>
           {/* Col 2 => Our Mission  */}
-          <SlideInFromRight>
+          <Fade direction="right" triggerOnce>
             <div className="w-full flex items-center justify-start flex-col gap-3 lg:hover:scale-105 cursor-pointer transition-all duration-300 border-solid border-main border-2 rounded p-5 bg-main bg-opacity-20">
               <h2 className="w-full text-main text-2xl lg:text-3xl  text-center font-bold uppercase">
                 Our Mission
@@ -68,7 +69,7 @@ const WhoWeAre = () => {
                 </p>
               </div>
             </div>
-          </SlideInFromRight>
+          </Fade>
         </div>
       </div>
     </Container>
