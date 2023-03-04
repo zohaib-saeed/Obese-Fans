@@ -17,3 +17,15 @@
 .MuiPaper-root {
   border-radius: 0px !important;
 }
+
+/* .MuiSnackbar-root {
+} */
+
+.MuiSnackbarContent-root {
+  border: 2px solid #00a6cb;
+  font-weight: 600;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

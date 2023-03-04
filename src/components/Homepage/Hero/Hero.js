@@ -12,7 +12,9 @@ const Hero = ({ isOpen, setIsOpen }) => {
     <div className="w-full lg:h-screen flex items-center justify-start flex-col hero-section">
       <Container height="lg:h-screen" id="home">
         <div className="w-full h-full lg:min-h-[650px]   flex items-center justify-center md:justify-start flex-col ">
+          {/* Navbar  */}
           <Navabr isOpen={isOpen} setIsOpen={setIsOpen} />
+          {/* Hero  */}
           <div className=" w-full h-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-7 py-12 xs:py-20 md:py-12 lg:py-6">
             {/* Col 1  */}
             <Fade
