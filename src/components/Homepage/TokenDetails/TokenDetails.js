@@ -61,12 +61,12 @@ const TokenDetails = () => {
         <div className="w-full  flex flex-col items-center justify-start gap-10 md:gap-12 lg:gap-16 py-10 md:py-12 lg:py-16">
           <ResponsiveHeading text="Token Details" />
           {/* Details Box  */}
-          <Fade direction="up" triggerOnce>
-            <div className="w-full p-5 md:p-6 mdl:p-9 rounded-xl grid grid-cols-1 mdl:grid-cols-[1.4fr_0.6fr] gap-10 mdl:gap-5 bg-main bg-opacity-20">
-              {/* Col 1  */}
-              <div className="w-full flex flex-col items-center justify-start gap-5">
-                <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-5">
-                  {/* Token  Name */}
+          <div className="w-full p-5 md:p-6 mdl:p-9 rounded-xl grid grid-cols-1 mdl:grid-cols-[1.4fr_0.6fr] gap-10 mdl:gap-5 bg-main bg-opacity-20">
+            {/* Col 1  */}
+            <div className="w-full flex flex-col items-center justify-start gap-5">
+              <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-5">
+                {/* Token  Name */}
+                <Fade direction="up" triggerOnce>
                   <div className="flex flex-col items-start justify-start ">
                     <div className="text-left text-white text-base uppercase">
                       token name{" "}
@@ -75,7 +75,9 @@ const TokenDetails = () => {
                       {tokenName}
                     </div>
                   </div>
-                  {/* Token Sale Stages */}
+                </Fade>
+                {/* Token Sale Stages */}
+                <Fade direction="up" triggerOnce>
                   <div className="flex flex-col items-start justify-start ">
                     <div className="text-left text-white text-base uppercase">
                       token sale stages
@@ -84,7 +86,9 @@ const TokenDetails = () => {
                       {tokenSaleStages}
                     </div>
                   </div>
-                  {/* Token type*/}
+                </Fade>
+                {/* Token type*/}
+                <Fade direction="up" triggerOnce>
                   <div className="flex flex-col items-start justify-start ">
                     <div className="text-left text-white text-base uppercase">
                       token type
@@ -93,7 +97,9 @@ const TokenDetails = () => {
                       {tokenType}
                     </div>
                   </div>
-                  {/* Token symbol*/}
+                </Fade>
+                {/* Token symbol*/}
+                <Fade direction="up" triggerOnce>
                   <div className="flex flex-col items-start justify-start ">
                     <div className="text-left text-white text-base uppercase">
                       token symbol
@@ -102,7 +108,9 @@ const TokenDetails = () => {
                       {tokenSymbol}
                     </div>
                   </div>
-                  {/* Decimals*/}
+                </Fade>
+                {/* Decimals*/}
+                <Fade direction="up" triggerOnce>
                   <div className="flex flex-col items-start justify-start ">
                     <div className="text-left text-white text-base uppercase">
                       Decimals
@@ -111,9 +119,11 @@ const TokenDetails = () => {
                       {decimals}
                     </div>
                   </div>
-                </div>
-                <div className="w-full flex items-center justify-start flex-col gap-5">
-                  {/*Token Contract Address*/}
+                </Fade>
+              </div>
+              <div className="w-full flex items-center justify-start flex-col gap-5">
+                {/*Token Contract Address*/}
+                <Fade direction="up" triggerOnce>
                   <div className="w-full flex flex-col items-start gap-1 justify-start ">
                     <div className="text-left text-white text-base uppercase">
                       Token contract address{" "}
@@ -134,7 +144,9 @@ const TokenDetails = () => {
                       />
                     </div>
                   </div>
-                  {/*Presale Contract Address*/}
+                </Fade>
+                {/*Presale Contract Address*/}
+                <Fade direction="up" triggerOnce>
                   <div className="w-full flex flex-col items-start justify-start gap-1 ">
                     <div className="text-left text-white text-base uppercase">
                       Presale contract address{" "}
@@ -152,15 +164,17 @@ const TokenDetails = () => {
                       />
                     </div>
                   </div>
-                </div>
+                </Fade>
               </div>
-              {/* Col 2  */}
-              <div className="order-first mdl:order-last w-full h-full flex flex-col items-center justify-start border-opacity-25 mdl:border-l-boulder mdl:border-l mdl:border-l-solid ">
-                <div className="w-full flex flex-col items-start justify-start gap-3 mdl:gap-6 mdl:pl-5">
-                  <h2 className="text-left text-white font-semibold text-2xl ">
-                    Presale Details
-                  </h2>
-                  {/* Current stage supply */}
+            </div>
+            {/* Col 2  */}
+            <div className="order-first mdl:order-last w-full h-full flex flex-col items-center justify-start border-opacity-25 mdl:border-l-boulder mdl:border-l mdl:border-l-solid ">
+              <div className="w-full flex flex-col items-start justify-start gap-3 mdl:gap-6 mdl:pl-5">
+                <h2 className="text-left text-white font-semibold text-2xl ">
+                  Presale Details
+                </h2>
+                {/* Current stage supply */}
+                <Fade direction="up" triggerOnce>
                   <div className="flex flex-col items-start justify-start ">
                     <div className="text-left text-white text-base uppercase">
                       {calories} CLRS
@@ -169,7 +183,9 @@ const TokenDetails = () => {
                       ObeseFans Calories
                     </div>
                   </div>
-                  {/* Current stage price */}
+                </Fade>
+                {/* Current stage price */}
+                <Fade direction="up" triggerOnce>
                   <div className="flex flex-col items-start justify-start ">
                     <div className="text-left text-white text-base uppercase">
                       current stage price
@@ -178,7 +194,9 @@ const TokenDetails = () => {
                       1 CLRS = ${currentStagePrice}
                     </div>
                   </div>
-                  {/* Exchange listing price */}
+                </Fade>
+                {/* Exchange listing price */}
+                <Fade direction="up" triggerOnce>
                   <div className="flex flex-col items-start justify-start ">
                     <div className="text-left text-white text-base uppercase">
                       exchange listing price
@@ -187,10 +205,10 @@ const TokenDetails = () => {
                       1 CLRS = ${exchangeListingPrice}
                     </div>
                   </div>
-                </div>
+                </Fade>
               </div>
             </div>
-          </Fade>
+          </div>
         </div>
       </Container>
       <Snackbar
