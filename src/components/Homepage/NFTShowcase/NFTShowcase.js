@@ -19,16 +19,14 @@ const NFTShowcase = () => {
               {showoff.mainLabel}
             </p>
           </Fade>
-          <Fade direction="up" triggerOnce>
-            <div className="w-[250px] sm:w-[300px] h-[280px] sm:h-[330px] flex items-center justify-center relative rounded overflow-hidden">
-              <Image
-                src={showoff.data.imgUrl}
-                alt=""
-                fill
-                className="object-cover"
-              />
-            </div>
-          </Fade>
+          <div className="w-[250px] sm:w-[300px] h-[280px] sm:h-[330px] flex items-center justify-center relative rounded overflow-hidden">
+            <Image
+              src={showoff.data.imgUrl}
+              alt=""
+              fill
+              className="object-cover"
+            />
+          </div>
           <div className="w-full">
             <Fade direction="bottom" triggerOnce>
               <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-4 border-main border-solid border-2 bg-main bg-opacity-20 py-6 px-6 rounded">
