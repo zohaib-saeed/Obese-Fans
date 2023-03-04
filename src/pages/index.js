@@ -23,8 +23,8 @@ export default function Home() {
       <WhoWeAre />
       <AboutUs />
       <TokenDetails />
-      <Roadmap />
       <FeaturedIn />
+      <Roadmap />
       <NFTShowcase />
       <Win100k />
       <Ecosystem />
