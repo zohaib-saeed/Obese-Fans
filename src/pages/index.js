@@ -11,6 +11,7 @@ import Footer from "@/components/Homepage/Footer/Footer";
 import TokenDetails from "@/components/Homepage/TokenDetails/TokenDetails";
 import Roadmap from "@/components/Homepage/Roadmap/Roadmap";
 import NFTShowcase from "@/components/Homepage/NFTShowcase/NFTShowcase";
+import FeaturedIn from "@/components/Homepage/FeaturedIn/FeaturedIn";
 
 export default function Home() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -23,6 +24,7 @@ export default function Home() {
       <AboutUs />
       <TokenDetails />
       <Roadmap />
+      <FeaturedIn />
       <NFTShowcase />
       <Win100k />
       <Ecosystem />
