@@ -123,7 +123,7 @@ const TokenDetails = () => {
               </div>
               <div className="w-full flex items-center justify-start flex-col gap-5">
                 {/*Token Contract Address*/}
-                <Fade direction="up" triggerOnce>
+                <Fade className="w-full" direction="up" triggerOnce>
                   <div className="w-full flex flex-col items-start gap-1 justify-start ">
                     <div className="text-left text-white text-base uppercase">
                       Token contract address{" "}
@@ -146,7 +146,7 @@ const TokenDetails = () => {
                   </div>
                 </Fade>
                 {/*Presale Contract Address*/}
-                <Fade direction="up" triggerOnce>
+                <Fade className="w-full" direction="up" triggerOnce>
                   <div className="w-full flex flex-col items-start justify-start gap-1 ">
                     <div className="text-left text-white text-base uppercase">
                       Presale contract address{" "}
